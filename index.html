@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="http://commons.wikimedia.org/wiki/File:Globe_icon_soft_black.svg"
+                title="Susannaanas, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"
+                tabindex="-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Globe_icon_soft_black.svg/64px-Globe_icon_soft_black.svg.png?20230729143753"
+                    alt="Simple black globe icon" width="64" height="64" /></a>My Mock Website</h1>
+        <nav class="navbar" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" tabindex="-1" aria-expanded="false" aria-controls="sideMenu" onclick="toggleMenu()"
+                id="menuToggle">☰</div>
+        </nav>
+
+        <div class="side-menu" id="sideMenu">
+            <button class="close-menu-button" onclick="toggleMenu()" aria-label="Close menu">X</button>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT ME</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </header>
+
+    <main role="main">
+        <div id="content">
+            <br>
+            <section id="home" tabindex="-1" aria-labelledby="site-home"></section>
+
+            <section id="about" tabindex="-1" aria-labelledby="about-heading">
+                <h2 id="about-heading">About Me</h2>
+                <section id="about_text">
+                    <aside>
+                        <img src="resources/generic_profile_pic.svg" alt="My Profile Picture" width="150">
+                    </aside>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur magna libero, tincidunt et
+                        auctor
+                        eget, fermentum vel nunc. Maecenas finibus mi at vestibulum egestas. Sed fermentum eget lorem
+                        sit
+                        amet venenatis. Nullam tristique euismod varius. Curabitur rhoncus molestie lectus ut placerat.
+                        Fusce dignissim suscipit elit, id semper augue tincidunt nec. Proin varius, eros vel pharetra
+                        gravida, dui enim feugiat lacus, nec pulvinar orci augue nec odio. Phasellus mauris mi, lobortis
+                        id
+                        nisi consectetur, dapibus elementum est. Nulla facilisi. Etiam commodo id eros eget sagittis.
+                        Quisque nisi metus, efficitur tincidunt justo ut, pretium facilisis quam. Sed quis posuere
+                        lorem.
+                        Praesent gravida vel turpis non ultrices.<br>Nunc sed turpis sit amet risus pharetra vehicula
+                        sed
+                        non ligula. Nunc orci libero, bibendum sit amet egestas ut, iaculis nec purus. Praesent lacinia
+                        nisl
+                        rhoncus, blandit ex sed, luctus lorem. Integer nec varius risus. Maecenas dictum dictum ex, id
+                        sagittis erat ultricies sit amet. Suspendisse id finibus neque. Donec pulvinar cursus risus at
+                        facilisis. Suspendisse ut efficitur leo. Nunc non ultrices nisl. Etiam lobortis pharetra
+                        fringilla.
+                        Duis id ullamcorper turpis, ut dignissim risus. Vivamus tristique tortor et erat tempus aliquet.
+                    </p>
+                </section>
+            </section>
+            <br>
+            <section id="projects" tabindex="-1" aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <div class="project-filters" role="toolbar" aria-label="Project filters">
+                    <button data-filter="all" aria-pressed="true" class="active">All</button>
+                    <button data-filter="web" aria-pressed="false">Web</button>
+                    <button data-filter="data" aria-pressed="false">Data</button>
+                    <button data-filter="mobile" aria-pressed="false">Mobile</button>
+                </div>
+
+                <article class="project" data-category="web" tabindex="-1" aria-labelledby="proj1-heading">
+                    <h3 id="proj1-heading">Web Development Project</h3>
+                    <p>Proin ac rutrum est, quis lacinia urna. Proin ex turpis, finibus at lectus ut, accumsan accumsan
+                        massa. Ut posuere imperdiet diam, vel cursus justo condimentum eu. Cras vulputate accumsan
+                        nulla, eget aliquam ligula. Sed porttitor dignissim arcu vel suscipit. Donec non magna ut sem
+                        bibendum faucibus. Sed ultrices lacinia congue.</p>
+                </article>
+                <article class="project" data-category="data" tabindex="-1" aria-labelledby="proj2-heading">
+                    <h3 id="proj2-heading">Data Analysis Project</h3>
+                    <p>Nulla facilisi. Suspendisse luctus elit vitae dignissim lacinia. Nulla non ipsum eu quam
+                        fermentum dapibus at et mi. Integer elementum lacus vitae aliquet euismod. Mauris porttitor
+                        vulputate magna vel aliquet. In at libero non quam fermentum tincidunt sit amet semper enim.
+                        Phasellus rhoncus ipsum at purus mattis hendrerit.</p>
+                </article>
+                <article class="project" data-category="mobile" tabindex="-1" aria-labelledby="proj3-heading">
+                    <h3 id="proj3-heading">Mobile App Project</h3>
+                    <p>Nullam eget diam nibh. Morbi risus est, finibus et aliquet luctus, luctus id elit. Nullam et
+                        tincidunt quam. Sed ullamcorper elit orci, at volutpat lacus eleifend in. Mauris viverra tellus
+                        enim, molestie dapibus erat dignissim eu. Nulla dictum ex vel mi dictum, eget condimentum tortor
+                        venenatis. Suspendisse potenti. Fusce accumsan et enim a dapibus. Donec sed dictum augue, in
+                        rhoncus
+                        elit. Phasellus ligula mauris, venenatis scelerisque lectus at, pulvinar accumsan ex.</p>
+                </article>
+            </section>
+            <br>
+            <section id="skills" tabindex="-1" aria-labelledby="skills-heading">
+                <h2 id="skills-heading"><img src="resources/stonks_icon.svg" alt="Rising line graph icon" width="26"
+                        height="26" style="margin-right: 5px">Skills</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>C#</li>
+                </ul>
+            </section>
+            <br>
+            <section id="contact" tabindex="-1" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact Me</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <br>
+        </div>
+    </main>
+
+    <footer role="copyrightinfo">
+        <p>&copy; 2025 Mock Site. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
